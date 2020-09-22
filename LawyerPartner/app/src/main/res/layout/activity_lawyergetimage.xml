@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimageget"
+    tools:context=".lawyergetimage">
+
+    <TextView
+        android:id="@+id/txtvimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="UPLOAD IMAGE"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/lawdisplayImageView"
+        android:layout_below="@id/txtvimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/avatar2x" />
+
+
+    <RelativeLayout
+        android:id="@+id/relupload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/relgal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lawuploadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_file_upload_black_24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:tint="@android:color/white"
+            android:layout_marginBottom="20dp"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            android:backgroundTint="#F27769"
+            app:fabCustomSize="80dp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:text="UPLOAD"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:padding="15dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relgal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/lawdisplayImageView">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lawgalleryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_photo_library_black_24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:tint="@android:color/white"
+            android:layout_marginBottom="20dp"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            android:backgroundTint="#F27769"
+            app:fabCustomSize="80dp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:text="GALLERY"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:padding="15dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

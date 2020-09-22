@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:background="@android:color/transparent"
+    android:id="@+id/totalparent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/clientpic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_person_black_24dp" />
+
+    <TextView
+        android:id="@+id/txtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@id/clientpic"
+        android:text="NAME:"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtvclientname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@id/txtv1"
+        android:hint="name"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@+id/txtvclientname"
+        android:layout_toEndOf="@id/clientpic"
+        android:text="PHONE NUMBER:"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtvclientmob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@id/txtv2"
+        android:layout_below="@id/txtvclientname"
+        android:hint="num"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@+id/txtvclientmob"
+        android:layout_toEndOf="@id/clientpic"
+        android:text="EMAIL:"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtvclientmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@id/txtv3"
+        android:layout_below="@id/txtvclientmob"
+        android:hint="mail"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp" />
+
+
+
+</RelativeLayout>

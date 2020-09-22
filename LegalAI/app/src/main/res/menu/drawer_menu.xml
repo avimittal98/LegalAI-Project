@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_main"
+            android:icon="@drawable/ic_stat_home"
+            android:title="Home"
+            android:fontFamily="sans-serif"/>
+
+        <item android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_stat_profile"
+            android:title="Profile"
+            android:fontFamily="sans-serif"/>
+
+        <item android:id="@+id/nav_police"
+            android:icon="@drawable/ic_stat_police"
+            android:title="Police"
+            android:fontFamily="sans-serif"/>
+
+        <item android:id="@+id/nav_about"
+            android:icon="@drawable/ic_stat_about"
+            android:title="About"
+            android:fontFamily="sans-serif"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:fontFamily="sans-serif"
+            android:icon="@drawable/ic_stat_logout"
+            android:title="Logout" />
+    </group>
+</menu>

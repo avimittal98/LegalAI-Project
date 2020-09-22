@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:background="@android:color/transparent"
+    android:id="@+id/newparent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/acceptbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_tick_24dp"
+        android:tint="@android:color/white"
+        android:layout_marginEnd="60dp"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        android:backgroundTint="#18F158" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/refusebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_cross_24dp"
+        android:tint="@android:color/white"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        android:backgroundTint="#EF2A24"
+        android:layout_marginEnd="0dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/newclientpic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_person_black_24dp" />
+
+    <TextView
+        android:id="@+id/newtxtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@id/newclientpic"
+        android:text="NAME:"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/newtxtvclientname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@id/newtxtv1"
+        android:hint="name"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/newtxtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@+id/newtxtvclientname"
+        android:layout_toEndOf="@id/newclientpic"
+        android:text="PHONE NUMBER:"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/newtxtvclientmob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@id/newclientpic"
+        android:layout_below="@id/newtxtv2"
+        android:hint="num"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/newtxtv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@+id/newtxtvclientmob"
+        android:layout_toEndOf="@id/newclientpic"
+        android:text="EMAIL:"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/newtxtvclientmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@id/newclientpic"
+        android:layout_below="@id/newtxtv3"
+        android:hint="mail"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp" />
+
+
+
+</RelativeLayout>

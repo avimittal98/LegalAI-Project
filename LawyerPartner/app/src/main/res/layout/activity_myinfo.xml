@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgipc"
+    tools:context=".myinfo">
+
+    <TextView
+        android:id="@+id/txtvmyprof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="HOME"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logoutbtn"
+        android:layout_toEndOf="@id/txtvmyprof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:textColor="#F27769"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ImageView
+        android:id="@+id/profpiclaw"
+        android:layout_below="@id/txtvmyprof"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <RelativeLayout
+        android:id="@+id/reltotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profpiclaw">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/totalcard"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtvtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL :"
+                    android:textColor="#F27769"
+                    android:textSize="25sp"
+                    android:padding="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/numtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txtvtotal"
+                    android:hint="NONE"
+                    android:layout_centerVertical="true"
+                    android:textColor="#F27769"
+                    android:textSize="25sp"
+                    android:padding="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relnewcase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reltotal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/newcasecard"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtvnewcase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEW :"
+                    android:textColor="#F27769"
+                    android:textSize="25sp"
+                    android:padding="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/numnewcase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txtvnewcase"
+                    android:hint="NONE"
+                    android:layout_centerVertical="true"
+                    android:textColor="#F27769"
+                    android:textSize="25sp"
+                    android:padding="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relnewcase"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/galleryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/round_arrow_forward_24"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:tint="@android:color/white"
+            android:layout_marginBottom="20dp"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            android:backgroundTint="#F27769" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:text="MY PROFILE"
+            android:textColor="#F27769"
+            android:textSize="25sp"
+            android:padding="15dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

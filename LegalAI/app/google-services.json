@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "653230018270",
+    "firebase_url": "https://legalai-b7856.firebaseio.com",
+    "project_id": "legalai-b7856",
+    "storage_bucket": "legalai-b7856.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653230018270:android:9ccc060a661efd8d48bc4f",
+        "android_client_info": {
+          "package_name": "com.technical.legalai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653230018270-hltbnlu162pj3v3qbd2uue4vls7un22q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technical.legalai",
+            "certificate_hash": "b6f877c22ed7a786c000f7802d3a44968c0d754a"
+          }
+        },
+        {
+          "client_id": "653230018270-bc6svjfdr2lo4njr320ht8v24ndm1o4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5UJ-oDJxwU93MOLxSEJX8rWKfnG0Kacc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653230018270-bc6svjfdr2lo4njr320ht8v24ndm1o4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

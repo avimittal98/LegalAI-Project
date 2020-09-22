@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myprofile"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/reltop"
+            android:layout_width="match_parent"
+            android:layout_height="420dp">
+            <RelativeLayout
+                android:background="#00F0FA"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtvaboutlawyer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ABOUT LAWYER"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/lawprofilepic"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:layout_below="@id/txtvaboutlawyer"/>
+
+                <TextView
+                    android:id="@+id/lawyername"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/lawprofilepic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/lawmob"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/lawyername"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="phone"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/lawemail"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/lawmob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="20dp"
+                    android:text="email"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="60dp"
+                android:layout_marginTop="310dp"
+                app:cardElevation="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="YEARS OF\nPRACTICE"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:id="@+id/lawpracyears"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="X"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:paddingTop="10dp"
+                            android:textColor="#00F0FA"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/editprofile"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:elevation="20dp"
+                        android:background="@drawable/customborder"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EDIT\nPROFILE"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:paddingBottom="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_edit_24dp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CASES\nWON"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:id="@+id/lawcasewon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Z"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:paddingTop="10dp"
+                            android:textColor="#00F0FA"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/itemsborder"
+            android:alignmentMode="alignMargins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/additional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ADDITIONAL TEXT"
+                android:textStyle="italic"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/itemsborder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:background="@drawable/itemsborder"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consultation\nCharges"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/charges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="3dp"
+                    android:textColor="#00F0FA"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/itemsborder"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Law\nFirm"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/lawfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="3dp"
+                    android:textColor="#00F0FA"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/itemsborder"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special\nIPC"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/ipclist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="3dp"
+                    android:textColor="#00F0FA"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/itemsborder"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtvaddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Office\nAddress:"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/officeaddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:layout_toEndOf="@id/txtvaddr"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="3dp"
+                    android:textColor="#00F0FA"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/itemsborder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:background="@drawable/itemsborder"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Courts Of\nPractice"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/courtsofprac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="3dp"
+                    android:textColor="#00F0FA"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/itemsborder"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area Of\nPractice"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/areaofprac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="3dp"
+                    android:textColor="#00F0FA"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/itemsborder"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtvedu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education:"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:layout_toEndOf="@id/txtvedu"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="3dp"
+                    android:textColor="#00F0FA"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/itemsborder"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtvhandle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number\nOf Cases:"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/casehandle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:layout_toEndOf="@id/txtvhandle"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="3dp"
+                    android:textColor="#00F0FA"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

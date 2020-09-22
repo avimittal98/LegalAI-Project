@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglawyerrecycle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvabt"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABOUT:\nThe main idea behind the development of this project was to discover an effective and essential use of artificial intelligence in the Indian legal system. Through the means of interviews and other methods, it was revealed to us that the biggest challenge faced by a majority of victims was to find a relevant lawyer specializing in their cases. This served as an inspiration to develop this interactive android application that takes down the crime description and returns the relevant IPC sections. This app is then used to connect the victim to a lawyer specializing in those IPC sections. The same android application is then used to create an ecosystem for both the victim and the lawyer. "
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvdev"
+            android:layout_below="@+id/tvabt"
+            android:layout_marginTop="30dp"
+            android:text="DEVELOPED BY:\nHusain Kapadia\nAvi Mittal\nAdvait Pai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
